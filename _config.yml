@@ -1,0 +1,20 @@
+# site info
+baseurl: ""
+description: >
+  Fully qualified and professional tree surgeon based
+  in Kenilworth, UK. Covering surrounding areas.
+email: a.roddy123@yahoo.co.uk
+google_analytics: ""
+remote_theme: pages-themes/hacker
+repository: adr-tree-surgery/adr-tree-surgery.github.io
+title: ADR Tree Surgery
+url: https://adr-tree-surgery.github.io
+
+# social media
+facebook_username: ADRTreeSurgery
+github_username: adr-tree-surgery
+phone_number: "+44-7397-989-051"
+
+# image gallery
+images_url: /assets/images
+img_per_col: 2

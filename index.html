@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="intro">
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+
+  <p>Trees, hedges, shrubs etc. All size jobs welcome</p>
+  <p>
+    Call Andy on
+    <a
+      href="tel:+{{ site.phone_number | replace: '-', '' }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><i class="fa fa-fw fa-phone"></i> {{ site.phone_number }}</a
+    >
+    for a free quote.
+  </p>
+
+  <p>Services include:</p>
+  <ul class="fa-ul">
+    <li><i class="fa-li fa fa-tree"></i>Tree felling</li>
+    <li><i class="fa-li fa fa-tree"></i>Pollarding</li>
+    <li><i class="fa-li fa fa-tree"></i>Reductions</li>
+    <li><i class="fa-li fa fa-tree"></i>Hedge cutting</li>
+  </ul>
+  <p>All waste removed and everywhere left tidy. Fully insured.</p>
+</div>

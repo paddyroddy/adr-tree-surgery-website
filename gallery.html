@@ -1,0 +1,20 @@
+---
+layout: default
+title: Gallery
+permalink: /gallery/
+---
+
+<article class="gallery">
+  <div class="row">
+    {% assign tree_images = site.static_files | where: "extname", ".jpg" %} {%
+    for image in tree_images %} {% assign remainder = forloop.index | minus: 1 |
+    modulo: site.img_per_col %} {% if remainder == 0 %} {% if forloop.index != 1
+    %}
+  </div>
+  {% endif %}
+  <div class="col">
+    {% endif %}
+    <img src="{{ image.path }}" />
+    {% endfor %}
+  </div>
+</article>

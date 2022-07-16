@@ -1,0 +1,132 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #b5e853;
+  position: relative;
+  z-index: 9999;
+}
+
+a:hover,
+a:focus {
+  color: forestgreen;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans Mono", monospace;
+}
+
+header h1 {
+  margin: 0 0 0 0;
+}
+
+header h1:before {
+  content: "";
+}
+
+ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+header {
+  border: none;
+  background: none;
+}
+
+footer {
+  text-align: center;
+}
+
+/* header.html */
+
+.header {
+  margin: auto;
+  text-align: center;
+}
+
+/* footer.html */
+
+.icons-social i {
+  font-size: 3em;
+  padding: 10px;
+  color: #b5e853;
+}
+
+/* index.html */
+
+.intro {
+  text-align: center;
+  margin: 10% 0 0 0;
+}
+
+/* gallery.html */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.col {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.col img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .col {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other
+instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* 404.html */
+
+.four-zero-four {
+  margin: 7.5% 0 0 0;
+  text-align: center;
+}
+
+.four-zero-four h1 {
+  font-size: 4em;
+}
+
+@media only screen and (max-width: 40em) {
+  tr {
+    text-align: center;
+  }
+
+  td {
+    display: inline-block;
+  }
+}
