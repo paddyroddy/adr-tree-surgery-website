@@ -6,13 +6,12 @@ description: >
 email: a.roddy123@yahoo.co.uk
 google_analytics: ""
 remote_theme: pages-themes/hacker
-repository: adr-tree-surgery/adr-tree-surgery.github.io
-title: ADR Tree Surgery
-url: https://adr-tree-surgery.github.io
+repository: paddyroddy/adr-tree-tree-website
+title: A.D.R Tree Surgery
+url: https://www.adrtreesurgery.co.uk
 
 # social media
 facebook_username: ADRTreeSurgery
-github_username: adr-tree-surgery
 phone_number: "+44-7397-989-051"
 
 # image gallery
