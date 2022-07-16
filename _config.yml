@@ -1,5 +1,5 @@
 # site info
-baseurl: ""
+baseurl: "/adr-tree-surgery-website"
 description: >
   Fully qualified and professional tree surgeon based
   in Kenilworth, UK. Covering surrounding areas.
@@ -16,5 +16,4 @@ github_username: adr-tree-surgery
 phone_number: "+44-7397-989-051"
 
 # image gallery
-images_url: /assets/images
 img_per_col: 2
