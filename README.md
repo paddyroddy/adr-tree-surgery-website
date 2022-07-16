@@ -4,7 +4,7 @@
 
 ## Deployment
 
-To run locally: `bundle install; bundle exec jekyll serve --baseurl = "";`
+To run locally: `bundle install; bundle exec jekyll serve;`
 
 ## Formatting
 
