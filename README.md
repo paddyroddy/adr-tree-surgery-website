@@ -1,10 +1,10 @@
-# ADR Tree Surgery
+# A.D.R Tree Surgery
 
 [![deploy](https://github.com/adr-tree-surgery/adr-tree-surgery.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/adr-tree-surgery/adr-tree-surgery.github.io/actions/workflows/deploy.yml)
 
 ## Deployment
 
-To run locally: `bundle install; bundle exec jekyll serve;`
+To run locally: `bundle install; bundle exec jekyll serve --baseurl = "";`
 
 ## Formatting
 
