@@ -1,4 +1,7 @@
 <head>
+  <head>
+    <title>{{ site.title }}</title>
+  </head>
   <!-- Custom CSS -->
   <link
     rel="stylesheet"
@@ -42,7 +45,4 @@
     gtag("config", "{{ site.google_measurement | cgi_escape | escape }}");
   </script>
   {% endif %}
-  <head>
-    <title>{{ site.title }}</title>
-  </head>
 </head>
