@@ -30,7 +30,7 @@
   <script src="https://cdn.jsdelivr.net/npm/tsparticles/dist/tsparticles.min.js"></script>
   <script src="{{ '/assets/js/app.js' | relative_url }}"></script>
   <!-- Google Analytics -->
-  {% if jekyll.environment == 'production' and site.google_measurement %}
+  {% if jekyll.environment == 'production' %}
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id={{ site.google_measurement | cgi_escape | escape }}"
