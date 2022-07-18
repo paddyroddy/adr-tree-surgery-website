@@ -150,7 +150,7 @@ footer { text-align: center; }
 .icons-social i { font-size: 3em; padding: 10px; color: #b5e853; }
 
 /* index.html */
-.intro { text-align: center; margin: 7.5% 0 0 0; }
+.intro { text-align: center; margin: 10% 0 0 0; }
 
 /* gallery.html */
 .row { display: flex; flex-wrap: wrap; }
