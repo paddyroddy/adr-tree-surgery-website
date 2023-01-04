@@ -13,12 +13,12 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.3
+          ruby-version: 3.1
           bundler-cache: true
 
       - name: Install and Build
         run: >
-          JEKYLL_GITHUB_TOKEN=${{ secrets.JEKYLL_GITHUB_TOKEN }}
+          JEKYLL_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
           JEKYLL_ENV=production
           bundle exec jekyll build --destination site
 
