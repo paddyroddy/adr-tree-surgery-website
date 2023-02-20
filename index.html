@@ -17,6 +17,13 @@ layout: default
       rel="noopener noreferrer"
       ><i class="fa fa-fw fa-phone"></i> {{ site.phone_number }}</a
     >
+    or email
+    <a
+      href="mailto:{{ site.email | replace: ' (at) ', '@' }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><i class="fa fa-fw fa-envelope"></i> {{ site.email }}</a
+    >
     for a free quote.
   </p>
 
