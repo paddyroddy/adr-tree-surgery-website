@@ -399,6 +399,7 @@ footer {
 }
 
 .col img,
+source,
 video {
   vertical-align: middle;
   width: 100%;
