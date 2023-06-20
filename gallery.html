@@ -6,15 +6,20 @@ permalink: /gallery/
 
 <article class="gallery">
   <div class="row">
-    {% assign tree_images = site.static_files | where: "extname", ".jpg" %} {%
-    for image in tree_images %} {% assign remainder = forloop.index | minus: 1 |
-    modulo: site.img_per_col %} {% if remainder == 0 %} {% if forloop.index != 1
-    %}
+    {% assign tree_media = site.static_files | where_exp: "file", "file.extname
+    == '.jpg' or file.extname == '.mp4'" %} {% for media in tree_media %} {%
+    assign remainder = forloop.index | minus: 1 | modulo: site.media_per_col %}
+    {% if remainder == 0 %} {% if forloop.index != 1 %}
   </div>
   {% endif %}
   <div class="col">
-    {% endif %}
-    <img src="{{ site.baseurl}}{{ image.path }}" />
-    {% endfor %}
+    {% endif %} {% if media.extname == ".jpg" %}
+    <img src="{{ site.baseurl}}{{ media.path }}" />
+    {% else %}
+    <video controls muted>
+      <source src="{{ site.baseurl}}{{ media.path }}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    {% endif %} {% endfor %}
   </div>
 </article>
