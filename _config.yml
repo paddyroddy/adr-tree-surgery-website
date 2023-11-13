@@ -16,3 +16,7 @@ phone_number: "+44-7397-989-051"
 
 # medida gallery
 media_per_col: 4
+
+# disable redirects.json
+redirect_from:
+  json: false
