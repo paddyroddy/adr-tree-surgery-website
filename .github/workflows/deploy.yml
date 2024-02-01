@@ -19,4 +19,4 @@ jobs:
       - uses: paddyroddy/.github/actions/github-pages/jekyll@b45ffef611d12e0263916cf6f650a9b2cc13aa4f # v0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          ruby-version: "3.2"
+          ruby-version: "3.3"
