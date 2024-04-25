@@ -1,5 +1,5 @@
 tsParticles
-  .loadJSON("tsparticles", "/assets/json/particles.json")
+  .loadJSON("tsparticles", "/adr-tree-surgery-website/assets/json/particles.json")
   .then((container) => {
     console.log("callback - tsparticles config loaded");
   })
