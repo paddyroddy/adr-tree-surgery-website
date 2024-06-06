@@ -23,7 +23,7 @@ layout: default
     >
     or email
     <a
-      href="mailto:{{ site.email | replace: ' (dot) ', '.' | replace: ' (at) ', '@' }}"
+      href="mailto:{{ site.email | replace: ' (at) ', '@' | replace: ' (dot) ', '.' }}"
       target="_blank"
       rel="noopener noreferrer"
       ><i class="fa fa-fw fa-envelope"></i> {{ site.email }}</a
