@@ -6,21 +6,23 @@ redirect_from: /Gallery
 ---
 
 <article class="gallery">
-  <div class="row">
+  <div class="gallery-grid">
     {% assign tree_media = site.static_files | where_exp: "file", "file.extname
-    == '.jpg' or file.extname == '.mp4'" %} {% for media in tree_media %} {%
-    assign remainder = forloop.index | minus: 1 | modulo: site.media_per_col %}
-    {% if remainder == 0 %} {% if forloop.index != 1 %}
-  </div>
-  {% endif %}
-  <div class="col">
-    {% endif %} {% if media.extname == ".jpg" %}
-    <img src="{{ site.baseurl}}{{ media.path }}" />
-    {% else %}
-    <video controls muted>
-      <source src="{{ site.baseurl}}{{ media.path }}" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    {% endif %} {% endfor %}
+    == '.jpg' or file.extname == '.mp4'" %} {% for media in tree_media %}
+    <div class="gallery-item">
+      {% if media.extname == ".jpg" %}
+      <img
+        src="{{ site.baseurl}}{{ media.path }}"
+        alt="Gallery image"
+        loading="lazy"
+      />
+      {% else %}
+      <video controls muted>
+        <source src="{{ site.baseurl}}{{ media.path }}" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      {% endif %}
+    </div>
+    {% endfor %}
   </div>
 </article>
