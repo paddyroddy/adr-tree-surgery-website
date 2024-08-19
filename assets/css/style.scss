@@ -81,38 +81,32 @@ footer {
 
 /* gallery.html */
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
+.gallery {
+  padding: 20px;
 }
 
-/* Create four equal columns that sits next to each other */
-.col {
-  flex: 25%;
-  max-width: 25%;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
 }
 
-.col img,
-video {
-  vertical-align: middle;
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img,
+.gallery-item video {
   width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .col {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other
-instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col {
-    flex: 100%;
-    max-width: 100%;
-  }
+  height: 100%;
+  object-fit: cover;
 }
 
 /* 404.html */
@@ -126,12 +120,10 @@ instead of next to each other */
   font-size: 4em;
 }
 
-@media only screen and (max-width: 40em) {
-  tr {
-    text-align: center;
-  }
+@media screen and (max-width: 600px) {
+  /* gallery.html */
 
-  td {
-    display: inline-block;
+  .gallery-grid {
+    grid-template-columns: 1fr;
   }
 }
