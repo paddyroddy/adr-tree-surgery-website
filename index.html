@@ -17,14 +17,12 @@ layout: default
     Call Andy on
     <a
       href="tel:+{{ site.phone_number | replace: '-', '' }}"
-      target="_blank"
       rel="noopener noreferrer"
       ><i class="fa fa-fw fa-phone"></i> {{ site.phone_number }}</a
     >
     or email
     <a
       href="mailto:{{ site.email | replace: ' (at) ', '@' | replace: ' (dot) ', '.' }}"
-      target="_blank"
       rel="noopener noreferrer"
       ><i class="fa fa-fw fa-envelope"></i> {{ site.email }}</a
     >
