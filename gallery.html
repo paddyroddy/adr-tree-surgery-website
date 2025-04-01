@@ -17,7 +17,7 @@ redirect_from: /Gallery
         loading="lazy"
       />
       {% else %}
-      <video controls muted>
+      <video autoplay loop muted playsinline>
         <source src="{{ site.baseurl}}{{ media.path }}" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
