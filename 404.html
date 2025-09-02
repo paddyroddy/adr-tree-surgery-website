@@ -5,7 +5,7 @@
   <!-- Custom CSS -->
   <link
     rel="stylesheet"
-    href="/assets/css/style.css?v=e6e38ccf757a36580c9b5c7f8dbd0d6af9cc75cd"
+    href="/assets/css/style.css?v=fd6c4078079db81fa4b2bec71731b5f77b5e9cce"
   />
   <!-- Font Awesome -->
   <link
@@ -39,7 +39,11 @@
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-    gtag("set", { cookie_flags: "SameSite=None;Secure" });
+    gtag("consent", "default", {
+      ad_storage: "denied",
+      analytics_storage: "denied",
+    });
+
     gtag("config", "G-V66YXY9NLC");
   </script>
    <!-- Begin Jekyll SEO tag v2.8.0 -->
