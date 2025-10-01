@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # yamllint disable-line rule:line-length
-      - uses: paddyroddy/.github/actions/github-pages/jekyll@85100f0a11dfca7ddd8ee9d9a3a23a8cec060a02 # v0
+      - uses: paddyroddy/.github/actions/github-pages/jekyll@dd42b32e779552c6f911ca469111449a410facff # v0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           ruby-version: "3.3"
