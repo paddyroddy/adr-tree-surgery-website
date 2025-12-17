@@ -18,13 +18,13 @@ layout: default
     <a
       href="tel:+{{ site.phone_number | replace: '-', '' }}"
       rel="noopener noreferrer"
-      ><i class="fa fa-fw fa-phone"></i> {{ site.phone_number }}</a
+      ><i class="fa fa-fw fa-phone"></i> {{ site.phone_number | escape }}</a
     >
     or email
     <a
       href="mailto:{{ site.email | replace: ' (at) ', '@' | replace: ' (dot) ', '.' }}"
       rel="noopener noreferrer"
-      ><i class="fa fa-fw fa-envelope"></i> {{ site.email }}</a
+      ><i class="fa fa-fw fa-envelope"></i> {{ site.email | escape }}</a
     >
     for a free quote.
   </p>
