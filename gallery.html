@@ -18,7 +18,10 @@ redirect_from: /Gallery
       />
       {% else %}
       <video autoplay loop muted playsinline>
-        <source src="{{ site.baseurl }}{{ media.path | escape }}" type="video/mp4" />
+        <source
+          src="{{ site.baseurl }}{{ media.path | escape }}"
+          type="video/mp4"
+        />
         Your browser does not support the video tag.
       </video>
       {% endif %}
