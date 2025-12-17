@@ -12,13 +12,16 @@ redirect_from: /Gallery
     <div class="gallery-item">
       {% if media.extname == ".jpg" %}
       <img
-        src="{{ site.baseurl}}{{ media.path }}"
+        src="{{ site.baseurl }}{{ media.path | escape }}"
         alt="Gallery image"
         loading="lazy"
       />
       {% else %}
       <video autoplay loop muted playsinline>
-        <source src="{{ site.baseurl}}{{ media.path }}" type="video/mp4" />
+        <source
+          src="{{ site.baseurl }}{{ media.path | escape }}"
+          type="video/mp4"
+        />
         Your browser does not support the video tag.
       </video>
       {% endif %}

@@ -25,24 +25,12 @@
   <!-- particles.js -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles/dist/tsparticles.min.js"></script>
   <script src="{{ '/assets/js/app.js' | relative_url }}"></script>
-  <!-- Google Analytics -->
-  {% if jekyll.environment == 'production' %}
+  <!-- GoatCounter -->
+  {% if jekyll.environment == "production" %}
   <script
     async
-    src="https://www.googletagmanager.com/gtag/js?id={{ site.google_measurement | cgi_escape | escape }}"
+    data-goatcounter="https://{{ site.goatcounter_site | cgi_escape | escape }}.goatcounter.com/count"
+    src="//gc.zgo.at/count.js"
   ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("consent", "default", {
-      ad_storage: "denied",
-      analytics_storage: "denied",
-    });
-
-    gtag("config", "{{ site.google_measurement | cgi_escape | escape }}");
-  </script>
   {% endif %} {% seo %}
 </head>
