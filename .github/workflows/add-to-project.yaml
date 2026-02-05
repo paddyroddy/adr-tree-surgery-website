@@ -11,7 +11,7 @@ on:
 
 jobs:
   add-issue-to-project:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       # yamllint disable-line rule:line-length
       - uses: paddyroddy/.github/actions/add-to-project@2900a170a05fafa6d18c036e488235ae8c02fa59 # v0

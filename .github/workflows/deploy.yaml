@@ -12,7 +12,7 @@ jobs:
   build-and-deploy:
     env:
       BUNDLE_GEMFILE: ${{ github.workspace }}/Gemfile
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       # yamllint disable-line rule:line-length
       - uses: paddyroddy/.github/actions/github-pages/jekyll@2900a170a05fafa6d18c036e488235ae8c02fa59 # v0
