@@ -18,4 +18,4 @@ jobs:
         with:
           branch: gh-pages
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          lychee-args: --base . --no-progress --root-dir . --verbose .
+          lychee-args: --no-progress --root-dir . --verbose .
